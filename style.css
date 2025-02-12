@@ -1,0 +1,109 @@
+/* Importando Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("images/bg.jpg") #030728 no-repeat center/cover;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+  color: #fff;
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px); /* Correção aqui */
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 15px;
+  width: 15px;
+}
+
+.swiper-wrapper .swiper-slide-button {
+  color: #fff;
+  position: fixed;
+  margin-top: -50px;
+  transition: 0.2s ease; /* Correção aqui */
+}
+
+h3 {
+  text-decoration: underline;
+}
+.Plasmodium.spp,
+.Trypanosoma.cruzi,
+.Leishmania.spp,
+.Giardia.lamblia,
+.Entamoeba.histolytica,
+.Toxoplasma.gondii,
+.Taenia.solium,
+.Schistosoma.mansoni,
+.Ancylostoma.duodenale,
+.Wuchereria.bancrofti,
+.Trichuris.trichiura,
+.Strongyloides.stercoralis {
+    text-decoration: underline;
+}
+
+.swiper-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    margin: 0 10px 40px; /* Correção aqui */
+  }
+  .swiper-wrapper .swiper-slide-button {
+    display: block; /* Mostrar as setas mesmo em telas menores */
+  }
+}
+.card a {
+  display: inline-block; /* Mantém só a imagem como clicável */
+}
+
+.card a img {
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: transform 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+.card a img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
